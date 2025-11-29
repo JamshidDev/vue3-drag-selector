@@ -223,16 +223,6 @@ const performAutoScroll = () => {
   const ZONE_TOP = props.scrollZoneTop ?? props.scrollZone
   const ZONE_BOTTOM = props.scrollZoneBottom ?? props.scrollZone
 
-  console.log('O\'ng:', {
-    scrollLeft: container.scrollLeft,
-    maxScrollLeft,
-    canScrollRight
-  })
-  console.log('Past:', {
-    scrollTop: container.scrollTop,
-    maxScrollTop,
-    canScrollDown
-  })
 
   if (relativeX < ZONE_LEFT && canScrollLeft) {
     const distance = ZONE_LEFT - relativeX
