@@ -5,6 +5,7 @@ import { resolve } from 'path'
 export default defineConfig({
   plugins: [vue()],
   build: {
+    cssCodeSplit: false,
     lib: {
       entry: resolve(__dirname, 'src/index.js'),
       name: 'Vue3DragSelector',
