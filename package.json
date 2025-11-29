@@ -1,6 +1,6 @@
 {
   "name": "vue3-drag-selector",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A Vue 3 drag-to-select component with auto-scroll",
   "author": "Jamacoder",
   "license": "MIT",
