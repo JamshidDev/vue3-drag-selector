@@ -1,9 +1,12 @@
-import DragSelector from "./components/DragSelector.vue"
+import DragSelector from "./components/DragSelector.vue";
 
-export default {
+
+const Vue3DragSelector = {
     install(app) {
         app.component('DragSelector', DragSelector)
     }
 }
 
-export { DragSelector }
+
+export { DragSelector };
+export default Vue3DragSelector;

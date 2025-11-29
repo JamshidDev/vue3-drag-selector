@@ -5,35 +5,60 @@
   "author": "Jamacoder",
   "license": "MIT",
   "type": "module",
+
+  "main": "./dist/vue3-drag-selector.umd.cjs",
+  "module": "./dist/vue3-drag-selector.js",
+  "types": "./dist/index.d.ts",
+
+  "exports": {
+    ".": {
+      "import": "./dist/vue3-drag-selector.js",
+      "require": "./dist/vue3-drag-selector.umd.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+
+  "files": [
+    "dist"
+  ],
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "build:demo": "vite build --config vite.demo.config.js",
     "preview": "vite preview"
   },
-  "main": "./dist/vue3-drag-selector.umd.cjs",
-  "module": "./dist/vue3-drag-selector.js",
-  "exports": {
-    ".": {
-      "import": "./dist/vue3-drag-selector.js",
-      "require": "./dist/vue3-drag-selector.umd.cjs"
-    }
-  },
-  "files": [
-    "dist"
-  ],
+
   "keywords": [
-    "vue",
     "vue3",
+    "vue",
+    "vue-component",
+    "vue-library",
     "drag-select",
+    "drag-to-select",
+    "drag-and-select",
     "selection",
-    "auto-scroll"
+    "selection-box",
+    "auto-scroll",
+    "mouse-drag",
+    "drag-area",
+    "drag-highlight",
+    "select-items",
+    "interactive-selection"
   ],
+
   "peerDependencies": {
     "vue": "^3.4.0"
   },
+
   "devDependencies": {
     "vite": "^5.0.0",
-    "@vitejs/plugin-vue": "^5.0.0"
-  }
+    "@vitejs/plugin-vue": "^5.0.0",
+    "vue": "^3.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamshidDev/vue3-drag-selector"
+  },
+  "homepage": "https://vue3-drag-selector.netlify.app"
 }
