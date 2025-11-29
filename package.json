@@ -1,0 +1,35 @@
+{
+  "name": "vue3-drag-selector",
+  "version": "1.0.0",
+  "description": "A Vue 3 drag-to-select component with auto-scroll",
+  "author": "Jamacoder",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:demo": "vite build --config vite.demo.config.js",
+    "preview": "vite preview"
+  },
+  "main": "./dist/vue3-drag-selector.umd.cjs",
+  "module": "./dist/vue3-drag-selector.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue3-drag-selector.js",
+      "require": "./dist/vue3-drag-selector.umd.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "vue",
+    "vue3",
+    "drag-select",
+    "selection",
+    "auto-scroll"
+  ],
+  "peerDependencies": {
+    "vue": "^3.4.0"
+  }
+}
