@@ -1,10 +1,9 @@
-import type { DefineComponent, App } from 'vue'
+import type { DefineComponent } from 'vue'
 
 export interface DragSelectorProps {
     /**
      * Overlap percentage required to select an item
      * @default null (touch to select)
-     * @example 0.5 = 50% overlap required
      */
     threshold?: number | null
 
@@ -46,25 +45,25 @@ export interface DragSelectorProps {
 
     /**
      * Custom right edge scroll zone (px)
-     * @default null (uses scrollZone)
+     * @default null
      */
     scrollZoneRight?: number | null
 
     /**
      * Custom left edge scroll zone (px)
-     * @default null (uses scrollZone)
+     * @default null
      */
     scrollZoneLeft?: number | null
 
     /**
      * Custom top edge scroll zone (px)
-     * @default null (uses scrollZone)
+     * @default null
      */
     scrollZoneTop?: number | null
 
     /**
      * Custom bottom edge scroll zone (px)
-     * @default null (uses scrollZone)
+     * @default null
      */
     scrollZoneBottom?: number | null
 }
@@ -80,16 +79,16 @@ export interface DragSelectorExposed {
     selectedItems: Set<string>
 }
 
-export interface DragSelectorEmits {
-    (e: 'selection-start'): void
-    (e: 'selection-change', items: SelectedItem[]): void
-    (e: 'selection-end'): void
-}
-
 declare const DragSelector: DefineComponent<DragSelectorProps>
 
 declare const Vue3DragSelector: {
-    install: (app: App) => void
+    install(app: any): void
+}
+
+declare module 'vue' {
+    export interface GlobalComponents {
+        DragSelector: typeof DragSelector
+    }
 }
 
 export { DragSelector }
