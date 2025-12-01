@@ -72,15 +72,38 @@ export interface DragSelectorProps {
      */
     scrollZoneBottom?: number | null
 
-    /** Fired when drag selection starts */
-    onSelectionStart?: () => void
-
-    /** Fired when selection changes during drag */
-    onSelectionChange?: (items: SelectedItem[]) => void
-
-    /** Fired when drag selection ends */
-    onSelectionEnd?: () => void
 }
+
+/**
+ * Drag selection started
+ * Emits when user begins dragging.
+ */
+export declare const DragSelector: DefineComponent<
+    DragSelectorProps,
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+        /**
+         * Fired when drag selection starts.
+         */
+        selectionStart: () => void
+
+        /**
+         * Fired when selection changes during dragging.
+         * @param items Array of currently selected items.
+         */
+        selectionChange: (items: SelectedItem[]) => void
+
+        /**
+         * Fired when drag selection ends.
+         */
+        selectionEnd: () => void
+    }
+>
 
 export interface DragSelectorExposed {
     isSelected: (id: string | number) => boolean
