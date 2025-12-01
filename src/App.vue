@@ -1,5 +1,5 @@
 <script setup>
-import Demo from './components/Demo.vue'
+import Demo from './demo/Demo.vue'
 </script>
 
 <template>

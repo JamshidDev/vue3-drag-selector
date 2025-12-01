@@ -38,7 +38,7 @@ const onChangeSelectionEv = (v)=>{
 
 .container {
   height: 500px;
-  border: 1px solid #10b981;;
+  border: 1px solid #e5e5e5;
   border-radius: 8px;
   background-color:#fff;
 }
@@ -56,13 +56,14 @@ const onChangeSelectionEv = (v)=>{
   text-align: center;
   font-weight: bold;
   user-select: none;
-  color: #10b981;
-  background: #d7fee9;
-  border: 1px solid #10b981;
+  color: #262626;
+  background: #F8F8F8;
+  border: 1px solid #e5e5e5;
   border-radius: 12px;
 }
 
 .selected {
-  background: #10b981;
+  background: #E7000A;
+  color:white;
 }
 </style>
