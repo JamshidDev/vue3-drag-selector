@@ -48,6 +48,10 @@ const props = defineProps({
     type: Number,
     default:null,
   },
+  disable: {
+    type: Boolean,
+    default: false
+  },
 })
 
 const emit = defineEmits([
@@ -319,7 +323,8 @@ const stopAutoScroll = () => {
 }
 
 const handleMouseDown = (e) => {
-  if (e.button !== 0) return
+
+  if (props.disable || e.button !== 0) return
 
   if (e.target.closest('.no-selectable-item') && !e.shiftKey) {
     return

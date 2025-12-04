@@ -72,6 +72,12 @@ export interface DragSelectorProps {
      */
     scrollZoneBottom?: number | null
 
+    /**
+     * Disable component
+     * @default false
+     */
+    disable?: boolean
+
 }
 
 /**
