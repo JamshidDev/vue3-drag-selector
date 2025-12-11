@@ -2,7 +2,7 @@
  <div>
    <DragSelector
        :live-selection="liveSelection"
-       :disable="true"
+       :disable="false"
        @selection-change="onChangeSelectionEv"
        class="container">
      <div class="grid">

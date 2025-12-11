@@ -1,6 +1,6 @@
 
 <script setup>
-import { ref, reactive, computed, watch, onUnmounted } from 'vue'
+import { ref, reactive, computed, onUnmounted } from 'vue'
 
 
 const props = defineProps({
@@ -408,27 +408,12 @@ const onMouseUp = () => {
 }
 
 
-const isSelected = (id) => {
-  return selectedItems.value.has(String(id))
-}
-
-const clearSelection = () => {
-  selectedItems.value = new Set()
-  selectedIds.value = []
-}
-
 onUnmounted(() => {
   stopAutoScroll()
   document.removeEventListener('mousemove', onMouseMove)
   document.removeEventListener('mouseup', onMouseUp)
 })
 
-
-defineExpose({
-  isSelected,
-  clearSelection,
-  selectedItems,
-})
 </script>
 
 <template>
