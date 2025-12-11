@@ -140,40 +140,6 @@ const onSelectionChange = (selected) => {
 | `scrollZoneTop` | Number | `null` | Custom top scroll zone |
 | `scrollZoneBottom` | Number | `null` | Custom bottom scroll zone |
 
-### 📡 Events
-
-| Event | Payload | Description |
-|-------|---------|-------------|
-| `selection-start` | - | Fired when drag starts |
-| `selection-change` | `Array<{...dataset}>` | Fired when selection changes |
-| `selection-end` | - | Fired when drag ends |
-
-### 🔧 Methods (via ref)
-```vue
-<template>
-  <DragSelector ref="selectorRef">
-    <!-- items -->
-  </DragSelector>
-  <button @click="clear">Clear</button>
-</template>
-
-<script setup>
-import { ref } from 'vue'
-
-const selectorRef = ref(null)
-
-const clear = () => {
-  selectorRef.value.clearSelection()
-}
-</script>
-```
-
-| Method | Description |
-|--------|-------------|
-| `isSelected(id)` | Check if item is selected |
-| `clearSelection()` | Clear all selections |
-| `selectedItems` | Get selected items Set |
-
 ### ⚠️ Important
 
 1. **Container must have defined height:**
@@ -319,39 +285,6 @@ const onSelectionChange = (selected) => {
 | `scrollZoneTop` | Number | `null` | Yuqori scroll zonasi |
 | `scrollZoneBottom` | Number | `null` | Pastki scroll zonasi |
 
-### 📡 Events (Hodisalar)
-
-| Event | Payload | Tavsif |
-|-------|---------|--------|
-| `selection-start` | - | Tanlash boshlanganda |
-| `selection-change` | `Array<{...dataset}>` | Tanlash o'zgarganda |
-| `selection-end` | - | Tanlash tugaganda |
-
-### 🔧 Metodlar (ref orqali)
-```vue
-<template>
-  <DragSelector ref="selectorRef">
-    <!-- elementlar -->
-  </DragSelector>
-  <button @click="tozalash">Tozalash</button>
-</template>
-
-<script setup>
-import { ref } from 'vue'
-
-const selectorRef = ref(null)
-
-const tozalash = () => {
-  selectorRef.value.clearSelection()
-}
-</script>
-```
-
-| Metod | Tavsif |
-|-------|--------|
-| `isSelected(id)` | Element tanlanganmi tekshirish |
-| `clearSelection()` | Barcha tanlashlarni tozalash |
-| `selectedItems` | Tanlangan elementlar Set |
 
 ### ⚠️ Muhim
 
