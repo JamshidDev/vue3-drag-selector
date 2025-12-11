@@ -139,6 +139,7 @@ const onSelectionChange = (selected) => {
 | `scrollZoneLeft` | Number | `null` | Custom left scroll zone |
 | `scrollZoneTop` | Number | `null` | Custom top scroll zone |
 | `scrollZoneBottom` | Number | `null` | Custom bottom scroll zone |
+| `disabled` | Boolean | `false` | Disable drag selection |
 
 ### ⚠️ Important
 
@@ -284,6 +285,7 @@ const onSelectionChange = (selected) => {
 | `scrollZoneLeft` | Number | `null` | Chap scroll zonasi |
 | `scrollZoneTop` | Number | `null` | Yuqori scroll zonasi |
 | `scrollZoneBottom` | Number | `null` | Pastki scroll zonasi |
+| `disabled` | Boolean | `false` | Drag tanlashni o'chirish |
 
 
 ### ⚠️ Muhim
